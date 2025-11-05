@@ -14,13 +14,13 @@
 
 > 1. **快速体验项目**：[在线访问地址](https://www.macrozheng.com/admin/index.html) 。
 > 2. **全套学习教程**：[《mall学习教程》](https://www.macrozheng.com) 。
-> 3. **视频教程（2023最新版）**：[《mall视频教程》](https://www.macrozheng.com/mall/catalog/mall_video.html) 。
-> 4. **微服务版本**：基于Spring Cloud 2021 & Alibaba的项目：[mall-swarm](https://github.com/macrozheng/mall-swarm) 。
-> 5. **项目交流**：想要加群交流项目的朋友，可以加入[mall项目交流群](#公众号) 。
+> 3. **视频教程（最新版）**：[《mall视频教程》](https://www.macrozheng.com/mall/foreword/mall_video.html) 。
+> 4. **微服务版本**：基于Spring Cloud Alibaba的项目：[mall-swarm](https://github.com/macrozheng/mall-swarm) 。
+> 5. **分支说明**：`master`分支基于Spring Boot 2.7+JDK 8，`dev-v3`分支基于Spring Boot 3.2+JDK 17。
 
 ## 前言
 
-`mall`项目致力于打造一个完整的电商系统，采用现阶段流行技术实现。
+`mall`项目致力于打造一个完整的电商系统，采用现阶段主流技术实现。
 
 ## 项目文档
 
@@ -38,7 +38,7 @@
 
 项目演示地址： [https://www.macrozheng.com/admin/index.html](https://www.macrozheng.com/admin/index.html)  
 
-![后台管理系统功能演示](http://img.macrozheng.com/mall/project/mall_admin_show.png)
+![后台管理系统功能演示](./document/resource/mall_admin_show.png)
 
 #### 前台商城系统
 
@@ -46,7 +46,7 @@
 
 项目演示地址（将浏览器切换为手机模式效果更佳）：[https://www.macrozheng.com/app/](https://www.macrozheng.com/app/)
 
-![前台商城系统功能演示](http://img.macrozheng.com/mall/project/re_mall_app_show.jpg)
+![前台商城系统功能演示](./document/resource/re_mall_app_show.jpg)
 
 ### 组织结构
 
@@ -117,11 +117,11 @@ mall
 
 ##### 系统架构图
 
-![系统架构图](http://img.macrozheng.com/mall/project/re_mall_system_arch.jpg)
+![系统架构图](./document/resource/re_mall_system_arch.jpg)
 
 ##### 业务架构图
 
-![业务架构图](document/resource/re_mall_business_arch.jpg)
+![业务架构图](./document/resource/re_mall_business_arch.jpg)
 
 #### 模块介绍
 
@@ -139,7 +139,7 @@ mall
 
 #### 开发进度
 
-![项目开发进度图](http://img.macrozheng.com/mall/project/re_mall_dev_flow.jpg)
+![项目开发进度图](./document/resource/re_mall_dev_flow.jpg)
 
 ## 环境搭建
 
@@ -168,7 +168,7 @@ mall
 | 工具          | 版本号 | 下载                                                         |
 | ------------- | ------ | ------------------------------------------------------------ |
 | JDK           | 1.8    | https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html |
-| Mysql         | 5.7    | https://www.mysql.com/                                       |
+| MySQL         | 5.7    | https://www.mysql.com/                                       |
 | Redis         | 7.0    | https://redis.io/download                                    |
 | MongoDB       | 5.0    | https://www.mongodb.com/download-center                      |
 | RabbitMQ      | 3.10.5 | http://www.rabbitmq.com/download.html                        |
@@ -181,37 +181,27 @@ mall
 
 > Windows环境部署
 
-- Windows环境搭建请参考：[mall在Windows环境下的部署](https://www.macrozheng.com/mall/deploy/mall_deploy_windows.html);
-- 注意：只启动mall-admin,仅需安装Mysql、Redis即可;
+- Windows环境搭建请参考：[mall项目后端开发环境搭建](https://www.macrozheng.com/mall/start/mall_deploy_windows.html);
+- 注意：如果只启动`mall-admin`模块，仅需安装MySQL、Redis即可;
 - 克隆`mall-admin-web`项目，并导入到IDEA中完成编译：[前端项目地址](https://github.com/macrozheng/mall-admin-web);
-- `mall-admin-web`项目的安装及部署请参考：[mall前端项目的安装与部署](https://www.macrozheng.com/mall/deploy/mall_deploy_web.html) 。
+- `mall-admin-web`项目的安装及部署请参考：[mall项目前端发环境搭建](https://www.macrozheng.com/mall/start/mall_deploy_web.html) 。
 
 > Docker环境部署
 
-- 使用虚拟机安装CentOS7.6请参考：[虚拟机安装及使用Linux，看这一篇就够了](https://www.macrozheng.com/tool/linux_install.html);
-- Docker环境的安装请参考：[开发者必备Docker命令](https://www.macrozheng.com/mall/reference/linux_command.html);
+- 使用虚拟机安装CentOS7.6请参考：[虚拟机安装及使用Linux，看这一篇就够了](https://www.macrozheng.com/mall/deploy/linux_install.html);
 - 本项目Docker镜像构建请参考：[使用Maven插件为SpringBoot应用构建Docker镜像](https://www.macrozheng.com/project/maven_docker_fabric8.html);
 - 本项目在Docker容器下的部署请参考：[mall在Linux环境下的部署（基于Docker容器）](https://www.macrozheng.com/mall/deploy/mall_deploy_docker.html);
 - 本项目使用Docker Compose请参考： [mall在Linux环境下的部署（基于Docker Compose）](https://www.macrozheng.com/mall/deploy/mall_deploy_docker_compose.html);
 - 本项目在Linux下的自动化部署请参考：[mall在Linux环境下的自动化部署（基于Jenkins）](https://www.macrozheng.com/mall/deploy/mall_deploy_jenkins.html);
 
-> 相关环境部署
-
-- ELK日志收集系统的搭建请参考：[SpringBoot应用整合ELK实现日志收集](https://www.macrozheng.com/mall/reference/mall_tiny_elk.html);
-- 使用MinIO存储文件请参考：[前后端分离项目，如何优雅实现文件存储](https://www.macrozheng.com/mall/technology/minio_use.html);
-- 读写分离解决方案请参考：[你还在代码里做读写分离么，试试这个中间件吧](https://www.macrozheng.com/project/gaea.html);
-- Redis集群解决方案请参考：[Docker环境下秒建Redis集群](https://www.macrozheng.com/blog/redis_cluster.html) 。
-
 ## 公众号
 
-学习不走弯路，关注公众号「**macrozheng**」，回复「**学习路线**」，获取mall项目专属学习路线！
+加微信群交流，关注公众号「**macrozheng**」，回复「**加群**」即可。
 
-加微信群交流，公众号后台回复「**加群**」即可。
-
-![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
+![公众号图片](./document/resource/qrcode_for_macrozheng_258.jpg)
 
 ## 许可证
 
 [Apache License 2.0](https://github.com/macrozheng/mall/blob/master/LICENSE)
 
-Copyright (c) 2018-2023 macrozheng
+Copyright (c) 2018-2025 macrozheng
